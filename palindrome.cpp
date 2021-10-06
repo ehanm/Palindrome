@@ -12,12 +12,17 @@ int main() {
   char checker[81]; // character array to reverse the the previous array
   int convertercounter = 0;
   int finalcheck = 0;
+<<<<<<< HEAD
   memset(input, 0, 81);
   memset(converter, 0, 81);
   memset(checker, 0, 81);
 
   cin.get(input, 81);
   
+=======
+  cin.get(input, 81);
+
+>>>>>>> 1aa58e2569ab57d1b1ede793f11d9af8b5413a70
   for (int i = 0; i < strlen(input); i++) { // removing all punctuation and converting the entire array to uppercase
     if (isalpha(input[i]) != 0){
       converter[convertercounter] = toupper(input[i]);
@@ -27,15 +32,21 @@ int main() {
  
   }
 
+<<<<<<< HEAD
   checker[strlen(converter)] = '\0';
   
+=======
+>>>>>>> 1aa58e2569ab57d1b1ede793f11d9af8b5413a70
   for (int i = 0; i < strlen(converter); i++){ // reversing the entire array and copying it into a new array
     checker[i] = converter[strlen(converter)-1-i];
     cout << checker[i] << endl;
   }
 
+<<<<<<< HEAD
   
 
+=======
+>>>>>>> 1aa58e2569ab57d1b1ede793f11d9af8b5413a70
   for (int i = 0; i < strlen(converter); i++) { // checking if both arrays are the same
     if (checker[i] == converter[i]){
       finalcheck++;
